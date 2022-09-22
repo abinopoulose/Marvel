@@ -56,7 +56,7 @@
 }
 .heaher__top__btn a {
     align-items: center;
-    background: #fcc236 none repeat scroll 0 0;
+    background: rgba(7,109,175,255) none repeat scroll 0 0;
     color: #fff;
     display: flex;
     font-weight: 700;
@@ -100,7 +100,7 @@
   position: relative;
 }
 .main__menu > li:hover > a{
-  color: #fcc236;
+  color: rgba(7,109,175,255);
 }
 .logo a{
   display: block;
@@ -145,7 +145,7 @@
     transition: 0.4s;
 }
 .htc__header__search a i:hover{
-    color: #fcc236;
+    color: rgba(7,109,175,255);
 }
 .htc__header__search i {
     color: #bfbfbf;
@@ -162,7 +162,7 @@
 
 .sticky__header.scroll-header {
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-  background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+  background: rgba(255, 255, 255) none repeat scroll 0 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   left: 0;
   margin: 0 auto;
@@ -173,7 +173,7 @@
   z-index: 99;
 }
 .sticky__header.scroll-header .main__menu > li > a {
-  height: 70px;
+  height: 75px;
   line-height: 70px;
 }
 .sticky__header.scroll-header .logo {
@@ -255,7 +255,7 @@
 }
 .main__menu li.drop ul.dropdown li:hover > a {
     background: #fafafa none repeat scroll 0 0;
-    color: #fcc236;
+    color: rgba(7,109,175,255);
 }
 
 

@@ -30,11 +30,9 @@
     z-index: 1;
 }
   .project__thumb a img {
-    width: 90%;
-    height: 270px;
+    width: 100%;
+    height: 210px;
     object-fit: cover;
-    margin-bottom: 20px;
-    border: 5px solid #555;
 }
 
 .project__hover__info::before {
@@ -130,10 +128,9 @@
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {
   .project__thumb a img {
-    width: 90%;
-    height: 270px;
-    margin-bottom: 20px;
-    border: 5px solid #555;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
 }
 
 .project__hover__info {
@@ -323,10 +320,9 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
   .project__thumb a img {
-    width: 90%;
-    height: 270px;
-    margin-bottom: 20px;
-    border: 5px solid #555;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;;
 }
 .project__hover__info {
   background: rgba(252, 194, 54, 0.9) none repeat scroll 0 0;
@@ -540,13 +536,13 @@
 /* small mobile :320px. */
 @media (max-width: 767px) {
   
-.container {width:300px}
-
+  .logo img{
+    height: 73px;
+  }
 .project__thumb a img {
   width: 100%;
-  height: 100%;
-  margin-bottom: 20px;
-  border: 5px solid #555;
+  height: 210px;
+  object-fit: cover;
 }
 .project__hover__info {
   background: rgba(252, 194, 54, 0.9) none repeat scroll 0 0;
@@ -751,6 +747,10 @@
 }
 .sticky__header.scroll-header .mean-container a.meanmenu-reveal {
   margin-top: -54px;
+}
+
+.sticky__header.scroll-header .logo a img {
+  height: 60px;
 }
 .testimonial__thumb {
   margin-right: 0;
@@ -1010,3 +1010,10 @@ blockquote {
 
 }
  
+
+
+.mobile_product{
+  height:280px; 
+  overflow:hidden;
+  overflow-y:scroll;
+}

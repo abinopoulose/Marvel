@@ -5,14 +5,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Marvel International L.L.C</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <script src="js/vendor/jquery-1.12.0.min.js" crossorigin="anonymous"></script>
+    <script>  
+        $(function(){ 
+            $("#header1").load("layouts/header.html");  
+          $("#footer").load("layouts/footer.html");  
+    }); 
+    </script> 
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    
+
 
     <!-- All css files are included here. -->
     <!-- Bootstrap fremwork main css -->
@@ -34,231 +40,41 @@
 
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-     <style>
-        .box-style{
-            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-            margin-top: 40px;
-            padding-right: 0px;
-            padding-top: 0;
-            height: 320px;
-            
+    <style>
+        .box-style img {
+
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+
         }
-        .center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
 
-            }
+        .box-style {
+            background: #fff;
+            box-shadow: #ddd 0px 0px 8px 4px;
+            margin-top: 60px;
 
-            .product-content {
-                position: absolute;
-                bottom: 10px;
-                left: 50%;
-                transform: translate(-50%);
+        }
+    </style>
 
-            }
-     </style>
-    
 </head>
 
 <body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->  
+    <![endif]-->
 
     <!-- Body main wrapper start -->
     <div class="wrapper">
         <!-- Start Header Style -->
-        <div id="header" class="htc-header">
-            <!-- Start Header Top -->
-            <div class="htc__header__top bg__cat--1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                            <ul class="heaher__top__left">
-                                <!-- <li><i class="fa fa-clock-o"></i>7.30 AM  -  9.30 PM</li> -->
-                                <li><a href="#"><i class="fa fa-phone"></i>050-7297545</a></li>
-                                <li><a href="#"><i class="fa fa-envelope-open"></i>bm@marvelae.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                            <div class="header__top__right">
-                                <ul class="login-register">
-                                    <!-- <li><a href="login-register.html">LOGIN</a></li>
-                                    <li class="separator">/</li>
-                                    <li><a href="login-register.html">REGISTER</a></li> -->
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                                <!-- <div class="heaher__top__btn">
-                                    <a href="#">Buy Now</a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Header Top -->
-            <!-- Start Mainmenu Area -->
-            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-6 col-xs-7">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="images/logo/logo.jpeg" alt="logo image">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-sm-6 col-xs-5">
-                            <nav class="main__menu__nav  hidden-xs hidden-sm">
-                                <ul class="main__menu">
-                                    <li class="drop"><a href="index.html">HOME</a>
-                                        <!-- <ul class="dropdown">
-                                            <li><a href="index.html">Home 01</a></li>
-                                            <li><a href="index-2.html">Home 02</a></li>
-                                            <li><a href="index-3.html">Home 03</a></li>
-                                        </ul> -->
-                                    </li>
-                                    <li><a href="about.html">ABOUT US</a></li>
-                                    <!-- <li><a href="service.html">SERVICES</a></li> -->
-                                    <!-- <li class="drop"><a href="#">pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="service.html">service</a></li>
-                                            <li><a href="single-service.html">Single service</a></li>
-                                            <li><a href="projects-one.html">projects one</a></li>
-                                            <li><a href="projects-two.html">projects two</a></li>
-                                            <li><a href="projects-three.html">projects three</a></li>
-                                            <li><a href="single-project.html">Single Project</a></li>
-                                            <li><a href="blog.html">BLog</a></li>
-                                            <li><a href="blog-one-column.html">blog one column</a></li>
-                                            <li><a href="blog-two-column.html">blog two column</a></li>
-                                            <li><a href="blog-details.html">blog Details</a></li>
-                                            <li><a href="login-register.html">Log in & Register</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <li class="drop"><a href="#">PRODUCTS</a>
-                                        <ul class="dropdown">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <li><a href="/products/">EXPANSION JOINTS</a></li>
-                                                    <li><a href="/products/spacer.html">Spacers</a></li>
-                                                    <li><a href="/products/filler_boards.html">Filler Boards</a></li>
-                                                    <li><a href="">Fibre glass mesh</a></li>
-                                                    <li><a href="/products/tile_trim.html">Tile trim</a></li>
-                                                    <li><a href="/products/construction_chemicals.html">Construction chemicals and Others</a></li>
-                                                    <li><a href="/products/power_tools.html">Power tools and accessories</a></li>
-                                                    <li><a href="/products/water_proofing.html">Water-proofing </a></li>
-
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <li><a href="products/water_stop.html">Water stop</a></li>
-                                                    <li><a href="products/dowel_bar.html">Dowel Bar</a></li>
-                                                    <li><a href="products/ladder_scaffold.html">Ladder/ Scaffold</a></li>
-                                                    <li><a href="products/bollards.html">Bollards and Rubber Items</a></li>
-                                                    <li><a href="products/geo_textile.html">Geo Textile</a></li>
-                                                    <li><a href="products/copper_fitting.html">Copper Fittings for Gas Industries</a></li>
-                                                    <li><a href="products/plaster.html">Plaster Accessories</a></li>
-                                                    <li><a href="products/drainage.html">Multi Drain</a></li>
-                                                </div>
-                                            </div>
-                                        
-                                        </ul>
-                                    </li>
-                                    <!-- <li class="drop"><a href="blog.html">BLOG</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog.html">BLog</a></li>
-                                            <li><a href="blog-one-column.html">blog one column</a></li>
-                                            <li><a href="blog-two-column.html">blog two column</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <li><a href="policy.html">POLICY & SPECIALTY</a></li>
-                                    <li><a href="contact.html">CONTACT US</a></li>
-                                </ul>
-                            </nav>
-                            <div class="mobile-menu clearfix visible-xs visible-sm">
-                                <nav id="mobile_dropdown">
-                                    <ul>
-                                        <li><a href="index.html">Home</a>
-                                            <!-- <ul>
-                                                <li><a href="index.html">Home 01</a></li>
-                                                <li><a href="index-2.html">Home 02</a></li>
-                                                <li><a href="index-3.html">Home 03</a></li> 
-                                            </ul> -->
-                                        </li>
-                                        <li><a href="about.html">ABOUT US</a></li>
-                                        <li><a href="#">PRODUCTS</a>
-                                            <ul class="dropdown">
-                                                        <li><a href="products/expantion-joint.html">EXPANSION JOINTS</a></li>
-                                                        <li><a href="products/spacer.html">Spacers</a></li>
-                                                        <li><a href="products/filler_boards.html">Filler Boards</a></li>
-                                                        <li><a href="">Fibre glass mesh</a></li>
-                                                        <li><a href="products/tile_trim.html">Tile trim</a></li>
-                                                        <li><a href="products/construction_chemicals.html">Construction chemicals and Others</a></li>
-                                                        <li><a href="products/power_tools.html">Power tools and accessories</a></li>
-                                                        <li><a href="products/water_proofing.html">Water-proofing </a></li>
-    
-                                                        <li><a href="products/water_stop.html">Water stop</a></li>
-                                                        <li><a href="products/dowel_bar.html">Dowel Bar</a></li>
-                                                        <li><a href="products/ladder_scaffold.html">Ladder/ Scaffold</a></li>
-                                                        <li><a href="products/bollards.html">Bollards and Rubber Items</a></li>
-                                                        <li><a href="products/geo_textile.html">Geo Textile</a></li>
-                                                        <li><a href="products/copper_fitting.html">Copper Fittings for Gas Industries</a></li>
-                                                        <li><a href="products/plaster.html">Plaster Accessories</a></li>
-                                                        <li><a href="products/drainage.html">Multi Drain</a></li>
-                                                   
-                                            
-                                            </ul>
-                                        </li>
-                                        <!-- <li><a href="#">pages</a>
-                                            <ul>
-                                                <li><a href="service.html">service</a></li>
-                                                <li><a href="single-service.html">Single service</a></li>
-                                                <li><a href="projects-one.html">projects one</a></li>
-                                                <li><a href="projects-two.html">projects two</a></li>
-                                                <li><a href="projects-three.html">projects three</a></li>
-                                                <li><a href="single-project.html">Single Project</a></li>
-                                                <li><a href="blog.html">BLog</a></li>
-                                                <li><a href="blog-one-column.html">blog one column</a></li>
-                                                <li><a href="blog-two-column.html">blog two column</a></li>
-                                                <li><a href="blog-details.html">blog Details</a></li>
-                                                <li><a href="login-register.html">Log in & Register</a></li>
-                                            </ul>
-                                        </li>  -->
-                                        <!-- <li><a href="blog.html">blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">BLog</a></li>
-                                                <li><a href="blog-one-column.html">blog one column</a></li>
-                                                <li><a href="blog-two-column.html">blog two column</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <li><a href="contact.html">CONTACT US</a></li>
-                                    </ul>
-                                </nav>
-                            </div> 
-                        </div>
-                        <div class="col-md-2 col-sm-6 hidden-xs">
-                            <!-- <div class="htc__header__search">
-                                <input type="text" placeholder="SEARCH">
-                                <a href="#"><i class="fa fa-search"></i></a>
-                            </div> -->
-                            <!-- <div class="heaher__top__btn">
-                                    <a href="#">Buy Now</a>
-                                </div> -->
-                        </div>
-                    </div>
-                    <div class="mobile-menu-area"></div>
-                </div>
-            </div>
-            <!-- End Mainmenu Area -->
-        </div>
+        <div id="header1" ></div>
         <!-- End Header Style -->
         <!-- Start Slider Area -->
         <div class="slider__container">
             <div class="slider__activation__wrap owl-carousel owl-theme">
                 <!-- Start Single Slide -->
-                <div class="slide slider__fixed--height slide__align--center" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url(images/slider/bg/2.jpg) no-repeat scroll 0 0 / cover;">
+                <div class="slide slider__fixed--height slide__align--center" data--black__overlay="6"
+                    style="background: rgba(0, 0, 0, 0) url(images/slider/bg/2.jpg) no-repeat scroll 0 0 / cover;">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 col-lg-12">
@@ -266,7 +82,11 @@
                                     <!-- <h4>SCIENCE 2006</h4> -->
                                     <h1>MARVEL BUILDING METERIALS TRADING L.L.C</h1>
                                     <p>
-                                        Marvel International Building Materials Trading LLC is a Sharjah (UAE) based  Trading Company.With more than 15 years UAE presence in this field, we can help in identifying the right products that best suits your requirements. We hold ourselves to high Standards of Quality & Service at economic prices in order to set ourselves apart from others who provide similar services.
+                                        Marvel International Building Materials Trading LLC is a Sharjah (UAE) based
+                                        Trading Company.With more than 15 years UAE presence in this field, we can help
+                                        in identifying the right products that best suits your requirements. We hold
+                                        ourselves to high Standards of Quality & Service at economic prices in order to
+                                        set ourselves apart from others who provide similar services.
                                     </p>
                                     <div class="slider__btn">
                                         <a class="htc__btn" href="contact.html">CONTACT US</a>
@@ -278,15 +98,20 @@
                 </div>
                 <!-- End Single Slide -->
                 <!-- Start Single Slide -->
-                <div class="slide slider__fixed--height slide__align--center" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url(images/slider/bg/1.jpg) no-repeat scroll 0 0 / cover;">
+                <div class="slide slider__fixed--height slide__align--center" data--black__overlay="6"
+                    style="background: rgba(0, 0, 0, 0) url(images/slider/bg/1.jpg) no-repeat scroll 0 0 / cover;">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 col-lg-12">
                                 <div class="slider__inner">
-                                    
+
                                     <h1> WE BUILD THE TRUST</h1>
                                     <p>
-                                        Marvel International Building Materials Trading LLC is a Sharjah (UAE) based  Trading Company.With more than 15 years UAE presence in this field, we can help in identifying the right products that best suits your requirements. We hold ourselves to high Standards of Quality & Service at economic prices in order to set ourselves apart from others who provide similar services.
+                                        Marvel International Building Materials Trading LLC is a Sharjah (UAE) based
+                                        Trading Company.With more than 15 years UAE presence in this field, we can help
+                                        in identifying the right products that best suits your requirements. We hold
+                                        ourselves to high Standards of Quality & Service at economic prices in order to
+                                        set ourselves apart from others who provide similar services.
                                     </p>
                                     <div class="slider__btn">
                                         <a class="htc__btn" href="contact.html">CONTACT US</a>
@@ -301,32 +126,32 @@
         </div>
         <!-- Start Slider Area -->
         <!-- Start Service Area -->
-        
-        <section class="htc__service__area service--2 bg__gray  ptb--100">
-            <div class="container-fluid">
+
+        <section class="htc__service__area service--2 bg__gray  ">
+            <div class="container">
                 <div class="row">
                     <div class="service__section__wrap clearfix">
                         <!-- Start Single Service -->
-                        
+
                         <!-- End Single Service -->
-                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 h1__service pt--40 pb--30">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 h1__service" style="margin-top: 40px;">
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="section__title text-center">
-                                        <h2 class="title__line">OUR <span class="text--theme">Product Categories</span></h2>
+                                        <h2 class="title__line">OUR <span class="text--theme">Product Categories</span>
+                                        </h2>
                                         <!-- <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble</p> -->
                                     </div>
                                 </div>
                             </div>
-                            <br>
-                            <br>
                             <div class="row">
                                 <!-- Start Single Service -->
-                                <div  class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service  box-style">
                                         <div class="service__thumb">
                                             <a href="products/expantion-joint.html">
-                                                <img src="images/Home page/1. Expansion joints.png" alt="service images">
+                                                <img src="images/Home page/1. Expansion joints.png"
+                                                    alt="service images">
                                             </a>
                                             <div class="service__hover">
                                                 <div class="service__action">
@@ -340,29 +165,11 @@
                                     </div>
                                 </div>
                                 <!-- End Single Service -->
-                                <div  class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
-                                        <div class="service__thumb" >
-                                            <a  href="products/spacer.html">
-                                                <img src="images/Home page/2. Spacers.png" alt="service images">
-                                            </a>
-                                            <div class="service__hover">
-                                                <div class="service__action">
-                                                    <a href="products/spacer.html">DETAILS</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="service__details product-content ">
-                                            <h2><a href="products/spacer.html">Spacer</a></h2>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12   box-style center" >
-                                    <div class="service  ">
-                                        <div class="service__thumb " >
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service  box-style">
+                                        <div class="service__thumb">
                                             <a href="products/filler_boards.html">
-                                                <img   src="images/Home page/3. Filler boards.png" alt="service images">
+                                                <img src="images/Home page/2. Filler boards.png" alt="service images">
                                             </a>
                                             <div class="service__hover">
                                                 <div class="service__action">
@@ -370,14 +177,33 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service__details product-content">
-                                            <h2><a href="products/filler_boards.html">Filler Boards</a></h2>
+                                        <div class="service__details  ">
+                                            <h2><a href="products/filler_boards.html">FILLER BOARD</a></h2>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12    center">
+                                    <div class="service  box-style">
+                                        <div class="service__thumb ">
+                                            <a href="products/fiberglassmesh.html">
+                                                <img src="images/Home page/3. Fibre glass mesh.png"
+                                                    alt="service images">
+                                            </a>
+                                            <div class="service__hover">
+                                                <div class="service__action">
+                                                    <a href="products/fiberglassmesh.html">DETAILS</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service__details ">
+                                            <h2><a href="products/fiberglassmesh.html">FIBER GLASS MESH</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service box-style">
                                         <div class="service__thumb">
                                             <a href="products/tile_trim.html">
                                                 <img src="images/Home page/4. Tile trim.png" alt="service images">
@@ -394,11 +220,12 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service box-style ">
                                         <div class="service__thumb">
                                             <a href="products/construction_chemicals.html">
-                                                <img src="images/Home page/5. construction chemicals.png" alt="service images">
+                                                <img src="images/Home page/5. construction chemicals.png"
+                                                    alt="service images">
                                             </a>
                                             <div class="service__hover">
                                                 <div class="service__action">
@@ -407,13 +234,15 @@
                                             </div>
                                         </div>
                                         <div class="service__details ">
-                                            <h2><a href="products/construction_chemicals.html">Construction chemicals</a></h2>
+                                            <h2 style="font-size: 16px;"><a
+                                                    href="products/construction_chemicals.html">Construction
+                                                    chemicals</a></h2>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service  box-style">
                                         <div class="service__thumb">
                                             <a href="products/power_tools.html">
                                                 <img src="images/Home page/6. Power tools.png" alt="service images">
@@ -424,17 +253,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service__details product-content ">
-                                            <h2><a href="products/power_tools.html">Power Tools</a></h2>
+                                        <div class="service__details  ">
+                                            <h2 style="font-size: 15px;"><a href="products/power_tools.html">Power Tools & Accessories</a></h2>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service  box-style">
                                         <div class="service__thumb">
                                             <a href="products/water_proofing.html">
-                                                <img src="images/Home page/8. Water proofing.png" alt="service images">
+                                                <img src="images/Home page/7. Water proofing.png" alt="service images">
                                             </a>
                                             <div class="service__hover">
                                                 <div class="service__action">
@@ -442,14 +271,31 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service__details product-content">
+                                        <div class="service__details ">
                                             <h2><a href="products/water_proofing.html">Water Proofing</a></h2>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service box-style ">
+                                        <div class="service__thumb">
+                                            <a href="products/water_stop.html">
+                                                <img src="images/Home page/8. Spacers.png" alt="service images">
+                                            </a>
+                                            <div class="service__hover">
+                                                <div class="service__action">
+                                                    <a href="products/spacer.html">DETAILS</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service__details ">
+                                            <h2><a href="products/spacer.html">spacer</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service box-style ">
                                         <div class="service__thumb">
                                             <a href="products/water_stop.html">
                                                 <img src="images/Home page/9. waterstop.png" alt="service images">
@@ -460,14 +306,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service__details product-content">
+                                        <div class="service__details ">
                                             <h2><a href="products/water_stop.html">Water Stop</a></h2>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service box-style ">
                                         <div class="service__thumb">
                                             <a href="products/dowel_bar.html">
                                                 <img src="images/Home page/10. Dowel bar.png" alt="service images">
@@ -478,17 +324,18 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service__details product-content">
+                                        <div class="service__details ">
                                             <h2><a href="products/dowel_bar.html">Dowerl Bar Sleeve</a></h2>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service box-style ">
                                         <div class="service__thumb">
                                             <a href="products/ladder_scaffold.html">
-                                                <img src="images/Home page/11. Ladder scaffold.png" alt="service images">
+                                                <img src="images/Home page/11. Ladder scaffold.png"
+                                                    alt="service images">
                                             </a>
                                             <div class="service__hover">
                                                 <div class="service__action">
@@ -496,17 +343,18 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service__details product-content">
+                                        <div class="service__details ">
                                             <h2><a href="products/ladder_scaffold.html">Ladder Scaffold</a></h2>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service box-style ">
                                         <div class="service__thumb">
                                             <a href="products/bollards.html">
-                                                <img src="images/Home page/12. Bollards & rubber items.png" alt="service images">
+                                                <img src="images/Home page/12. Bollards & rubber items.png"
+                                                    alt="service images">
                                             </a>
                                             <div class="service__hover">
                                                 <div class="service__action">
@@ -515,13 +363,14 @@
                                             </div>
                                         </div>
                                         <div class="service__details">
-                                            <h2><a href="products/bollards.html">Bollards & Rubber items</a></h2>
+                                            <h2 style="font-size: 16px;"><a href="products/bollards.html">Bollards &
+                                                    Rubber items</a></h2>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service  box-style">
                                         <div class="service__thumb">
                                             <a href="products/geo_textile.html">
                                                 <img src="images/Home page/13. Geotextile.png" alt="service images">
@@ -538,11 +387,12 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service box-style ">
                                         <div class="service__thumb">
                                             <a href="products/copper_fitting.html">
-                                                <img src="images/Home page/14. Copper fittings.png" alt="service images">
+                                                <img src="images/Home page/14. Copper fittings.png"
+                                                    alt="service images">
                                             </a>
                                             <div class="service__hover">
                                                 <div class="service__action">
@@ -550,17 +400,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service__details" style="margin-top: -20px;">
-                                            <h2><a href="products/copper_fitting.html">Copper Fittings</a></h2>
+                                        <div class="service__details">
+                                            <h2 style=""><a href="products/copper_fitting.html">Copper Items for Gas
+                                                Industries</a></h2>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service box-style ">
                                         <div class="service__thumb">
                                             <a href="products/plaster.html">
-                                                <img src="images/Home page/15. Plaster accessories.png" alt="service images">
+                                                <img src="images/Home page/15. Plaster accessories.png"
+                                                    alt="service images">
                                             </a>
                                             <div class="service__hover">
                                                 <div class="service__action">
@@ -574,8 +426,8 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 box-style center">
-                                    <div class="service  ">
+                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12  center">
+                                    <div class="service box-style ">
                                         <div class="service__thumb">
                                             <a href="products/drainage.html">
                                                 <img src="images/Home page/16. Drainage.png" alt="service images">
@@ -586,7 +438,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service__details product-content">
+                                        <div class="service__details ">
                                             <h2><a href="products/drainage.html">Drainage</a></h2>
                                         </div>
                                     </div>
@@ -599,20 +451,20 @@
             </div>
         </section>
         <!-- End About Area -->
-        
-       
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-   
-        <!-- End Counter Up Area -->
-        <!-- End Service Area -->
-        <!-- Start Offer Area -->
-         <!--<section class="htc__offer__area htc__offer__2 ht__offr--3 bg__gray">
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+
+    <!-- End Counter Up Area -->
+    <!-- End Service Area -->
+    <!-- Start Offer Area -->
+    <!--<section class="htc__offer__area htc__offer__2 ht__offr--3 bg__gray">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-5 col-sm-12 col-xs-12">
@@ -654,15 +506,15 @@
                 </div>
             </div>
         </section> -->
-        <!-- End Offer Area -->
-        <!-- Start Counter Up Area -->
-        <!-- <section class="htc__counterup__area ptb--50" style="background: rgba(0, 0, 0, 0) url(images/bg/3.jpg) no-repeat scroll center center / cover ;">
+    <!-- End Offer Area -->
+    <!-- Start Counter Up Area -->
+    <!-- <section class="htc__counterup__area ptb--50" style="background: rgba(0, 0, 0, 0) url(images/bg/3.jpg) no-repeat scroll center center / cover ;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-offset-1 col-lg-9 col-sm-12 col-xs-12">
                         <div class="htc__counterup__wrap"> -->
-                            <!-- Start Single Fact -->
-                            <!-- <div class="funfact">
+    <!-- Start Single Fact -->
+    <!-- <div class="funfact">
                                 <div class="fact__details">
                                     <div class="funfact__count__inner">
                                         <div class="fact__count ">
@@ -674,9 +526,9 @@
                                     </div>
                                 </div>
                             </div>  -->
-                            <!-- End Single Fact -->
-                            <!-- Start Single Fact -->
-                            <!-- <div class="funfact">
+    <!-- End Single Fact -->
+    <!-- Start Single Fact -->
+    <!-- <div class="funfact">
                                 <div class="fact__details">
                                     <div class="funfact__count__inner">
                                         <div class="fact__count ">
@@ -688,9 +540,9 @@
                                     </div>
                                 </div>
                             </div>  -->
-                            <!-- End Single Fact -->
-                            <!-- Start Single Fact -->
-                            <!-- <div class="funfact">
+    <!-- End Single Fact -->
+    <!-- Start Single Fact -->
+    <!-- <div class="funfact">
                                 <div class="fact__details">
                                     <div class="funfact__count__inner">
                                         <div class="fact__count ">
@@ -702,9 +554,9 @@
                                     </div>
                                 </div>
                             </div>  -->
-                            <!-- End Single Fact -->
-                            <!-- Start Single Fact -->
-                            <!-- <div class="funfact">
+    <!-- End Single Fact -->
+    <!-- Start Single Fact -->
+    <!-- <div class="funfact">
                                 <div class="fact__details">
                                     <div class="funfact__count__inner">
                                         <div class="fact__count ">
@@ -716,15 +568,15 @@
                                     </div>
                                 </div>
                             </div>  -->
-                            <!-- End Single Fact -->
-                        <!-- </div>
+    <!-- End Single Fact -->
+    <!-- </div>
                     </div>
                 </div>
             </div>
         </section> -->
-        <!-- End Counter Up Area -->
-        <!-- Start Latest Project Area -->
-        <!-- <section class="htc__latest__project__area ptb--70 bg__white">
+    <!-- End Counter Up Area -->
+    <!-- Start Latest Project Area -->
+    <!-- <section class="htc__latest__project__area ptb--70 bg__white">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -734,10 +586,10 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="row">
+    <!-- <div class="row">
                     <div class="htc__latest__project__wrap clearfix mt--60"> -->
-                        <!-- Start Single Project -->
-                        <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+    <!-- Start Single Project -->
+    <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                             <div class="project foo">
                                 <div class="project__thumb">
                                     <a href="single-project.html">
@@ -752,9 +604,9 @@
                                 </div>
                             </div>
                         </div> -->
-                        <!-- End Single Project -->
-                        <!-- Start Single Project -->
-                        <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+    <!-- End Single Project -->
+    <!-- Start Single Project -->
+    <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                             <div class="project foo">
                                 <div class="project__thumb">
                                     <a href="single-project.html">
@@ -769,9 +621,9 @@
                                 </div>
                             </div>
                         </div> -->
-                        <!-- End Single Project -->
-                        <!-- Start Single Project -->
-                        <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+    <!-- End Single Project -->
+    <!-- Start Single Project -->
+    <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                             <div class="project foo">
                                 <div class="project__thumb">
                                     <a href="single-project.html">
@@ -786,9 +638,9 @@
                                 </div>
                             </div>
                         </div> -->
-                        <!-- End Single Project -->
-                        <!-- Start Single Project -->
-                        <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+    <!-- End Single Project -->
+    <!-- Start Single Project -->
+    <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                             <div class="project foo">
                                 <div class="project__thumb">
                                     <a href="single-project.html">
@@ -803,9 +655,9 @@
                                 </div>
                             </div>
                         </div> -->
-                        <!-- End Single Project -->
-                        <!-- Start Single Project -->
-                        <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+    <!-- End Single Project -->
+    <!-- Start Single Project -->
+    <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                             <div class="project foo">
                                 <div class="project__thumb">
                                     <a href="single-project.html">
@@ -820,9 +672,9 @@
                                 </div>
                             </div>
                         </div> -->
-                        <!-- End Single Project -->
-                        <!-- Start Single Project -->
-                        <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+    <!-- End Single Project -->
+    <!-- Start Single Project -->
+    <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                             <div class="project foo">
                                 <div class="project__thumb">
                                     <a href="single-project.html">
@@ -837,14 +689,14 @@
                                 </div>
                             </div>
                         </div> -->
-                        <!-- End Single Project -->
-                    <!-- </div> -->
-                <!-- </div> -->
-            <!-- </div>
+    <!-- End Single Project -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div>
         </section> -->
-        <!-- End Latest Project Area -->
-        <!-- Start Team Area -->
-        <!-- <section class="htc__team__area ptb--120" data--gray__overlay="9.5" style="background: rgba(0, 0, 0, 0) url(images/bg/1.jpg) no-repeat fixed center center / cover ;">
+    <!-- End Latest Project Area -->
+    <!-- Start Team Area -->
+    <!-- <section class="htc__team__area ptb--120" data--gray__overlay="9.5" style="background: rgba(0, 0, 0, 0) url(images/bg/1.jpg) no-repeat fixed center center / cover ;">
             <div class="htc__team__container">
                 <div class="container">
                     <div class="row">
@@ -857,8 +709,8 @@
                     </div>
                     <div class="row">
                         <div class="htc__team__wrap clearfix mt--30"> -->
-                            <!-- Start Single Team -->
-                            <!-- <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+    <!-- Start Single Team -->
+    <!-- <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
                                 <div class="team foo">
                                     <div class="team__inner">
                                         <div class="team__thumb">
@@ -882,9 +734,9 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <!-- End Single Team -->
-                            <!-- Start Single Team -->
-                            <!-- <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+    <!-- End Single Team -->
+    <!-- Start Single Team -->
+    <!-- <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
                                 <div class="team foo">
                                     <div class="team__inner">
                                         <div class="team__thumb">
@@ -908,9 +760,9 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <!-- End Single Team -->
-                            <!-- Start Single Team -->
-                            <!-- <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+    <!-- End Single Team -->
+    <!-- Start Single Team -->
+    <!-- <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
                                 <div class="team foo">
                                     <div class="team__inner">
                                         <div class="team__thumb">
@@ -934,9 +786,9 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <!-- End Single Team -->
-                            <!-- Start Single Team -->
-                            <!-- <div class="col-md-3 col-lg-3 hidden-sm col-xs-12">
+    <!-- End Single Team -->
+    <!-- Start Single Team -->
+    <!-- <div class="col-md-3 col-lg-3 hidden-sm col-xs-12">
                                 <div class="team foo">
                                     <div class="team__inner">
                                         <div class="team__thumb">
@@ -960,15 +812,15 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <!-- End Single Team -->
-                        <!-- </div>
+    <!-- End Single Team -->
+    <!-- </div>
                     </div>
                 </div>
             </div>
         </section> -->
-        <!-- End Team Area -->
-        <!-- Start Testimonial Area -->
-        <!-- <section class="htc__testimonial__area testimonial__2 ptb--70 bg__white">
+    <!-- End Team Area -->
+    <!-- Start Testimonial Area -->
+    <!-- <section class="htc__testimonial__area testimonial__2 ptb--70 bg__white">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
@@ -982,7 +834,7 @@
                         <div class="htc__testimonial__wrap">
                             <div class="testimonial__activation--2 clearfix">
                                 <!-- Start Single Testimonial -->
-                                <!-- <div class="testimonial">
+    <!-- <div class="testimonial">
                                     <div class="testimonial__thumb">
                                          <img src="images/test/client/2.jpg" alt="clint image">
                                     </div>
@@ -994,11 +846,11 @@
                                         <h2><a href="#">Ken Williams</a></h2>
                                         <h4>CEO, Alves</h4>
                                     </div>
-                                </div> --> 
-                                 <!-- End Single Testimonial -->
-                                 <!-- Start Single Testimonial -->
-                                <!-- End Single Testimonial -->
-                                <!-- <div class="testimonial">
+                                </div> -->
+    <!-- End Single Testimonial -->
+    <!-- Start Single Testimonial -->
+    <!-- End Single Testimonial -->
+    <!-- <div class="testimonial">
                                     <div class="testimonial__thumb">
                                          <img src="images/test/client/3.jpg" alt="clint image">
                                     </div>
@@ -1011,9 +863,9 @@
                                         <h4>CEO, Alves</h4>
                                     </div>
                                 </div> -->
-                                <!-- End Single Testimonial -->
-                                <!-- Start Single Testimonial -->
-                                <!-- <div class="testimonial">
+    <!-- End Single Testimonial -->
+    <!-- Start Single Testimonial -->
+    <!-- <div class="testimonial">
                                     <div class="testimonial__thumb">
                                          <img src="images/test/client/2.jpg" alt="clint image">
                                     </div>
@@ -1026,9 +878,9 @@
                                         <h4>CEO, Alves</h4>
                                     </div>
                                 </div> -->
-                                <!-- End Single Testimonial -->
-                                <!-- Start Single Testimonial -->
-                                <!-- <div class="testimonial">
+    <!-- End Single Testimonial -->
+    <!-- Start Single Testimonial -->
+    <!-- <div class="testimonial">
                                     <div class="testimonial__thumb">
                                          <img src="images/test/client/3.jpg" alt="clint image">
                                     </div>
@@ -1041,9 +893,9 @@
                                         <h4>CEO, Alves</h4>
                                     </div>
                                 </div> -->
-                                <!-- End Single Testimonial -->
-                                <!-- Start Single Testimonial -->
-                                <!-- <div class="testimonial">
+    <!-- End Single Testimonial -->
+    <!-- Start Single Testimonial -->
+    <!-- <div class="testimonial">
                                     <div class="testimonial__thumb">
                                          <img src="images/test/client/2.jpg" alt="clint image">
                                     </div>
@@ -1056,16 +908,16 @@
                                         <h4>CEO, Alves</h4>
                                     </div>
                                 </div> -->
-                                <!-- End Single Testimonial -->
-                            <!-- </div>
+    <!-- End Single Testimonial -->
+    <!-- </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section> -->
-        <!-- End Testimonial Area -->
-        <!-- Start Blog Area -->
-        <!-- <section class="htc__blog__area htc__blog--2 ptb--70 bg__gray">
+    <!-- End Testimonial Area -->
+    <!-- Start Blog Area -->
+    <!-- <section class="htc__blog__area htc__blog--2 ptb--70 bg__gray">
             <div class="container">
                 <div class="row">
                     <div class="section__title text-center">
@@ -1075,8 +927,8 @@
                 </div>
                 <div class="row">
                     <div class="htc__blog__wrap mt--30 clearfix"> -->
-                        <!-- Start Single Blog -->
-                        <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+    <!-- Start Single Blog -->
+    <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                             <div class="blog foo">
                                 <div class="blog__thumb">
                                     <a href="blog-details.html">
@@ -1098,9 +950,9 @@
                                 </div>
                             </div>
                         </div> -->
-                        <!-- End Single Blog -->
-                        <!-- Start Single Blog -->
-                        <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+    <!-- End Single Blog -->
+    <!-- Start Single Blog -->
+    <!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                             <div class="blog foo">
                                 <div class="blog__thumb">
                                     <a href="blog-details.html">
@@ -1122,9 +974,9 @@
                                 </div>
                             </div>
                         </div> -->
-                        <!-- End Single Blog -->
-                        <!-- Start Single Blog -->
-                        <!-- <div class="col-md-4 col-lg-4 hidden-sm col-xs-12">
+    <!-- End Single Blog -->
+    <!-- Start Single Blog -->
+    <!-- <div class="col-md-4 col-lg-4 hidden-sm col-xs-12">
                             <div class="blog foo">
                                 <div class="blog__thumb">
                                     <a href="blog-details.html">
@@ -1146,14 +998,14 @@
                                 </div>
                             </div>
                         </div> -->
-                        <!-- End Single Blog -->
-                    <!-- </div>
+    <!-- End Single Blog -->
+    <!-- </div>
                 </div>
             </div>
         </section> -->
-        <!-- End Blog Area -->
-        <!-- Start Call to Action Area -->
-        <!-- <section class="htc__callto__action" data--theme__overlay="9" style="background: rgba(0, 0, 0, 0) url(images/bg/4.jpg) no-repeat scroll center center / cover ;">
+    <!-- End Blog Area -->
+    <!-- Start Call to Action Area -->
+    <!-- <section class="htc__callto__action" data--theme__overlay="9" style="background: rgba(0, 0, 0, 0) url(images/bg/4.jpg) no-repeat scroll center center / cover ;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -1167,148 +1019,16 @@
                 </div>
             </div>
         </section> -->
-        <!-- End Call to Action Area -->
-        <br><br>
 
-                <!-- Start About Area -->
-        <section class="htc__about__area about--2 text__pos ptb--70 bg__white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="section__title text-center">
-                            <h2 class="title__line">OUR <span class="text--theme">COMPANIES</span></h2>
-                           </div>
-                    </div>
-                </div>
-                <div class="row  mt--70" >
-                    <div  class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                        <div  class="about foo">
-                            <div class="about__inner">
-                                <h2 class="text-center"><a href="https://www.marvelae.com/">Marvel Intl. Tech. Cont. LLC.</a></h2>
-                                <br>
-                                <P class="text-center" >
-                                    Exclusive UAE & Oman Distributors of <br>
-                                Dixon Europe Hygienic products
-                                </P>
-                           
-                                <P class="text-center" >
-                                    Leading supplier & contractor of customized  
-                                    Industrial processing solutions and services
-                                </P>
-                              <br>
-                                <P class="text-center" >
-                                    Tel: +9716 5429338 &nbsp;  Mob: 050 7297545  
-                                Email:sales@marvelae.com  &nbsp; www.marvelae.com
-                                </P>
-                                
-                            </div>
-                            <div class="about__inner about__hober__info">
-                                <h2 class="text-center"><a href="https://www.marvelae.com/">Marvel International Technical Contracting L.L.C</a></h2>
-                                <br>
-                                <P class="text-center" >
-                                    Exclusive UAE & Oman Distributors of <br>
-                                Dixon Europe Hygienic products
-                                </P>
-                           
-                                <P class="text-center" >
-                                    Leading supplier & contractor of customized
-                                    Industrial processing solutions and services
-                                </P>
-                              <br>
-                                <P class="text-center" >
-                                    Tel: +9716 5429338 &nbsp;  Mob: 050 7297545  
-                                Email:sales@marvelae.com &nbsp;  www.marvelae.com
-                                </P>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                        <div class="about foo">
-                            <div class="about__inner">
-                                <h2 class="text-center"><a href="https://www.firstclassuae.com/">First class Elec. Sw. Gr. Co. LLC.</a></h2>
-                                <br>
-                                <P class="text-center" >
-                                    Control Panels, Electrical Distribution Panels
-                                    Industrial Automation & Control Engg.  
-                                    Supply, Installation & Programming of: 
-                                    VFD, Soft Starter, PLC, SCADA & HMI 
-                                    Power, Control, Instrument & Data Cabling 
-                                </P>
-                                <br>
-                              
-                                <P class="text-center" >
-                                    Tel: +9716 5429269     &nbsp;     Mob: 050-6580150
-                                    Email:fcpanel@eim.ae &nbsp;   www.firstclassuae.com
-                                </P>
-                                
-                            </div>
-                            <div class="about__inner about__hober__info">
-                                <h2 class="text-center"><a href="https://www.firstclassuae.com/">First class Elec. Sw. Gr. Co. LLC.</a></h2>
-                                <br>
-                                <P class="text-center" >
-                                    Control Panels, Electrical Distribution Panels
-                                    Industrial Automation & Control Engg.  
-                                    Supply, Installation & Programming of: 
-                                    VFD, Soft Starter, PLC, SCADA & HMI 
-                                    Power, Control, Instrument & Data Cabling 
-                                </P>
-                           
-                              <br>
-                                <P class="text-center" >
-                                    Tel: +9716 5429269     &nbsp;      Mob: 050-6580150
-                                    Email:fcpanel@eim.ae &nbsp;   www.firstclassuae.com
-                                </P>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                        <div class="about foo">
-                            <div class="about__inner">
-                                <h2 class="text-center"><a href="https://www.marvelbmuae.com/">Marvel Intl. Bldg. Mat. Tr.  LLC.</a></h2>
-                                <br>
-                                <P class="text-center" >
-                                    Import, Export & Trading of <br>
-                                    Materials for Foam Work and 
-                                    Finishing Materials for <br>
-                                    Construction Industry
-                                </P>
-                                
-                                <br><br><br>
-                              
-                                <P class="text-center" >
-                                    Tel: +9716 5429338  &nbsp;   Mob:050-7297545 <br>
-                                    Email: bm@marvelae.com  &nbsp;  www.marvelbmuae.com
-                                </P>
-                                
-                            </div>
-                            
-                            <div class="about__inner about__hober__info">
-                                <h2 class="text-center"><a href="https://www.marvelbmuae.com/">Marvel Intl. Bldg. Mat. Tr.  LLC.</a></h2>
-                                <br>
-                                <P class="text-center" >
-                                    Import, Export & Trading of <br>
-                                    Materials for Foam Work and 
-                                    Finishing Materials for <br>
-                                    Construction Industry
-                                </P>
-                                <br><br><br>
-                              
-                                <P class="text-center" >
-                                    Tel: +9716 5429338    &nbsp;    Mob:050-7297545 
-                                    Email: bm@marvelae.com &nbsp;  www.marvelbmuae.com
-                                </P>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-center">
-                        Please call us today or email us your requirements and we welcome the opportunity to respond immediately with a cost effective solution.
-                    </p>
-                </div>
-            </div>
 
-        </section>
-        <!-- End About Area -->
-        <!--<div class="row">
+    <!-- End Call to Action Area -->
+    <br><br>
+
+    <!-- Start About Area -->
+    <!-- Start About Area -->
+
+    <!-- End About Area -->
+    <!--<div class="row">
             <div class="col-xs-12">
                 <div class="section__title text-center">
                     <h2 class="title__line">GROUP <span class="text--theme">COMPANIES</span></h2>
@@ -1316,8 +1036,8 @@
                 </div>
             </div>
         </div>-->
-        <!-- Start Brand Area -->
-        <!--<div class="htc__brand__area">
+    <!-- Start Brand Area -->
+    <!--<div class="htc__brand__area">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -1332,9 +1052,9 @@
                 </div>
             </div>
         </div>-->
-        <!-- End Brand Area -->
-        <!-- Start Newsletter Area -->
-        <!-- <section class="htc__newsletter__area ptb--90 bg__gray">
+    <!-- End Brand Area -->
+    <!-- Start Newsletter Area -->
+    <!-- <section class="htc__newsletter__area ptb--90 bg__gray">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -1350,7 +1070,7 @@
                                                     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
                                                 </div>
                                                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                                <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
+    <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
                                                 <div class="clearfix subscribe__btn"><input type="submit" value="SUBSCRIBE NOW" name="subscribe" id="mc-embedded-subscribe" class="bst__btn btn--white__color">
                                                     
                                                 </div>
@@ -1369,15 +1089,15 @@
                 </div>
             </div>
         </section>  -->
-        <!-- End Newsletter Area -->
-        <!-- Start Google Map Area -->
-        <!-- <div class="map-contacts">
+    <!-- End Newsletter Area -->
+    <!-- Start Google Map Area -->
+    <!-- <div class="map-contacts">
             <div id="googleMap"></div> -->
-            <!-- Start Contact Address -->
-            <!-- <div class="htc__contact__address add-res htc__contact__address--2">
+    <!-- Start Contact Address -->
+    <!-- <div class="htc__contact__address add-res htc__contact__address--2">
                 <div class="htc__contact__wrap clearfix"> -->
-                    <!-- Start Single Address -->
-                    <!-- <div class="ht__address__inner">
+    <!-- Start Single Address -->
+    <!-- <div class="ht__address__inner">
                         <div class="ht__address__icon map-pin">
                             <i class="zmdi zmdi-pin"></i>
                         </div>
@@ -1385,9 +1105,9 @@
                             <p>Stock Building, 125 Main Street <br>1st Lane, San Francisco, USA</p>
                         </div>
                     </div> -->
-                    <!-- End Single Address -->
-                    <!-- Start Single Address -->
-                    <!-- <div class="ht__address__inner">
+    <!-- End Single Address -->
+    <!-- Start Single Address -->
+    <!-- <div class="ht__address__inner">
                         <div class="ht__address__icon glob">
                             <i class="fa fa-globe" aria-hidden="true"></i>
                         </div>
@@ -1396,9 +1116,9 @@
                             <p><a href="#">www.example.com</a></p>
                         </div>
                     </div> -->
-                    <!-- End Single Address -->
-                    <!-- Start Single Address -->
-                    <!-- <div class="ht__address__inner">
+    <!-- End Single Address -->
+    <!-- Start Single Address -->
+    <!-- <div class="ht__address__inner">
                         <div class="ht__address__icon">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </div>
@@ -1407,208 +1127,24 @@
                             <p><a href="#">(001) 65897 569 784</a></p>
                         </div>
                     </div> -->
-                    <!-- End Single Address -->
-                <!-- </div>
+    <!-- End Single Address -->
+    <!-- </div>
             </div> -->
-            <!-- End Contact Address -->
-        <!-- </div> -->
-        <!-- End Google Map Area -->
-                <!-- Start Contact Address -->
-                
-                <div class="htc__contact__address add-res bg__cat--1">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="htc__contact__wrap clearfix">
-                                    <!-- Start Single Address -->
-                                    <div class="ht__address__inner">
-                                        <div class="ht__address__icon map-pin">
-                                            <i class="zmdi zmdi-pin"></i>
-                                        </div>
-                                        <div class="ht__address__details">
-                                            <p>MARVEL INTERNATIONAL <br>
-                                                INTERNATIONAL BUILDING  <br>
-                                                MATERIALS TRADING LLC</p>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Address -->
-                                    <!-- Start Single Address -->
-                                    <div class="ht__address__inner">
-                                        <div class="ht__address__icon glob">
-                                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="ht__address__details">
-                                            <p><a href="#">0507297545</a></p>
-                                           
-                                        </div>
-                                    </div>
-                                    <!-- End Single Address -->
-                                    <!-- Start Single Address -->
-                                    <div class="ht__address__inner">
-                                        <div class="ht__address__icon">
-                                            <i class="fa fa-phone" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="ht__address__details">
-                                            <p><a href="#">0507297545 </a></p>
-                                            <p><a href="#">0506580150</a></p>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Address -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Contact Address -->
-                <footer class="htc__footer__area">
-                    <div class="footer__top ptb--130" data--1f2d30__overlay="9.5" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat fixed center center / cover ;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="htc__footer__wrap clearfix">
-                                    <!-- Start Single Footer -->
-                                    <!-- <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                                        <div class="footer">
-                                            <div class="footer__widget">
-                                                <h2 class="ft__title">ABOUT</h2>
-                                            </div>
-                                            <div class="ft__details">
-                                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled demoralized On the other hand, we denounce </p>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                    <!-- End Single Footer -->
-                                    <!-- Start Single Footer -->
-                                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 xmt-40">
-                                        <div class="footer quick__link">
-                                            <div class="footer__widget">
-                                                <!-- <h2 class="ft__title">QUICK LINKS</h2> -->
-                                            </div>
-                                            <div class="footer__link">
-                                                <ul class="ft__menu">
-                                                    <li><a href="products/dowel_bar.html">Dowel Bar Sleeve</a></li>
-                                                    <li><a href="products/expantion-joint.html">Expansion Joints</a></li>
-                                                    <li><a href="products/">Fiberglass Mesh</a></li>
-                                                    
-                                                </ul>
-                                                <!-- <ul class="ft__menu">
-                                                    <li><a href="#">Quote</a></li>
-                                                    <li><a href="projects-one.html">Projects</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
-                                                    <li><a href="#">Features</a></li>
-                                                </ul> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Footer -->
-                                    <!-- Start Single Footer -->
-                                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 xmt-40">
-                                        <div class="footer quick__link">
-                                            <div class="footer__widget">
-                                                <!-- <h2 class="ft__title">QUICK LINKS</h2> -->
-                                            </div>
-                                            <div class="footer__link">
-                                                <ul class="ft__menu">
-                                                    <li><a href="products/geo_textile.html">Geo Textile</a></li>
-                                                    <li><a href="products/ladder_scaffold.html">Ladder</a></li>
-                                                    <li><a href="products/">PVC Corner Beads</a></li>
-                                                    
-                                                </ul>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Footer -->
-                                    
-                                    <!-- Start Single Footer -->
-                                    <!-- <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 smt-40 xmt-40">
-                                        <div class="footer">
-                                            <div class="footer__widget">
-                                                <h2 class="ft__title">INSTAGRAM</h2>
-                                            </div>
-                                            <ul class="footer__instagram">
-                                                <li><a href="#"><img src="images/blog/sm-img/1.jpg" alt="images"></a></li>
-                                                <li><a href="#"><img src="images/blog/sm-img/2.jpg" alt="images"></a></li>
-                                                <li><a href="#"><img src="images/blog/sm-img/3.jpg" alt="images"></a></li>
-                                                <li><a href="#"><img src="images/blog/sm-img/4.jpg" alt="images"></a></li>
-                                                <li><a href="#"><img src="images/blog/sm-img/5.jpg" alt="images"></a></li>
-                                                <li><a href="#"><img src="images/blog/sm-img/6.jpg" alt="images"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div> -->
-                                    <!-- End Single Footer -->
-                                    <!-- Start Single Footer -->
-                                    <div class="col-md-3 col-lg-2 col-lg-offset-1 col-sm-6 col-xs-12 smt-40 xmt-40">
-                                        <div class="footer">
-                                            <div class="footer__widget">
-                                                <!-- <h2 class="ft__title">INQUARY</h2> -->
-                                                <div class="footer__link">
-                                                    <ul class="ft__menu">
-                                                        <li><a href="about.html">About Us</a></li>
-                                                        <li><a href="contact.html">Contact Us</a></li>
-                                                        <!-- <li><a href="#">Plambing</a></li>
-                                                        <li><a href="#">Plambing</a></li> -->
-                                                    </ul>
-                                                    <!-- <ul class="ft__menu">
-                                                        <li><a href="#">Painting</a></li>
-                                                        <li><a href="#">Roofing</a></li>
-                                                        <li><a href="#">Plambing</a></li>
-                                                        <li><a href="#">Features</a></li>
-                                                    </ul> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Footer -->
-                                    <!-- Start Single Footer -->
-                                    <div class="col-md-3 col-lg-2 col-lg-offset-1 col-sm-6 col-xs-12 smt-40 xmt-40">
-                                        <div class="footer">
-                                            <div class="footer__widget">
-                                                <h2 class="ft__title">CONTACT DETAILS</h2>
-                                                <div class="footer__link">
-                                                    <ul class="">
-                                                        <li><a>MARVEL INTERNATIONAL</a></li>
-                                                        <li><a>INTERNATIONAL BUILDING </a></li>
-                                                        <li><a>MATERIALS TRADING LLC</a></li>
-                                                        <!-- <li><a>Landline:+971 42211517</a></li> -->
-                                                        <li><a>Mobile: 0507297545, 0506580150</a></li>
-                                                        <li><a>WhatsApp: 0507297545</a></li>
-                                                    </ul>
-                                                    <!-- <ul class="ft__menu">
-                                                        <li><a href="#">Painting</a></li>
-                                                        <li><a href="#">Roofing</a></li>
-                                                        <li><a href="#">Plambing</a></li>
-                                                        <li><a href="#">Features</a></li>
-                                                    </ul> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Footer -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="copyright bg__theme">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="copyright__inner">
-                                        <p>Copyright <a href="https://tinos.co.in/" target="_blank">Tinos</a>
-                                        All Rights Reserved 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <!-- End Footer Area -->
-    </div>
+    <!-- End Contact Address -->
+    <!-- </div> -->
+    <!-- End Google Map Area -->
+    <!-- Start Contact Address -->
+
+
+    <!-- End Footer Area -->
+  
     <!-- Body main wrapper end -->
 
     <!-- Placed js at the end of the document so the pages load faster -->
 
     <!-- jquery latest version -->
-    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+
+    <div id="footer"></div> 
     <!-- Bootstrap framework js -->
     <script src="js/bootstrap.min.js"></script>
     <!-- All js plugins included in this file. -->
@@ -1637,235 +1173,235 @@
 
                 // How you would like to style the map. 
                 // This is where you would paste any style found on Snazzy Maps.
-                 styles: [
-  
+                styles: [
 
-    {
-        "featureType": "administrative",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#ff0000"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#888888"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "hue": "#ff0000"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "color": "#6e6e6e"
-            },
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.country",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#6f6b6b"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "color": "#c5c5c5"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.natural",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#cfcfcf"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.natural.landcover",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#ff0000"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.natural.landcover",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "hue": "#ff0000"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "visibility": "off"
-            },
-            {
-                "color": "#909090"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.medical",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e5e5e5"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e5e5e5"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.place_of_worship",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#ff0000"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.sports_complex",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#f7f7f7"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#ffffff"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "gamma": 7.18
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.line",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "gamma": 0.48
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#bcbcbc"
-            },
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#ffffff"
-            }
-        ]
-    }
-]
+
+                    {
+                        "featureType": "administrative",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "hue": "#ff0000"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#888888"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "hue": "#ff0000"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "labels.text",
+                        "stylers": [
+                            {
+                                "color": "#6e6e6e"
+                            },
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.country",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#6f6b6b"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "labels.text",
+                        "stylers": [
+                            {
+                                "color": "#c5c5c5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape.natural",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#cfcfcf"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape.natural.landcover",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "hue": "#ff0000"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape.natural.landcover",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "hue": "#ff0000"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            },
+                            {
+                                "color": "#909090"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.medical",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#e5e5e5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#e5e5e5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.place_of_worship",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ff0000"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.sports_complex",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f7f7f7"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "gamma": 7.18
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels.text",
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.line",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "gamma": 0.48
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.station",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "color": "#bcbcbc"
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            }
+                        ]
+                    }
+                ]
             };
 
             // Get the HTML DOM element that will contain your map 
@@ -1881,7 +1417,7 @@
                 map: map,
                 title: 'Tasfiu!',
                 icon: 'images/icons/map-2.png',
-                animation:google.maps.Animation.BOUNCE
+                animation: google.maps.Animation.BOUNCE
 
             });
         }

@@ -5,14 +5,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Projects Three || Simply Construction HTML5 Template</title>
+    <title>Marvel International L.L.C</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <script src="../js/vendor/jquery-1.12.0.min.js" crossorigin="anonymous"></script>
+    <script>  
+        $(function(){ 
+            $("#header1").load("layouts/header.html");  
+          $("#footer").load("layouts/footer.html");  
+    }); 
+    </script>
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    
+
 
     <!-- All css files are included here. -->
     <!-- Bootstrap fremwork main css -->
@@ -39,197 +45,13 @@
 <body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->  
+    <![endif]-->
 
     <!-- Body main wrapper start -->
     <div class="wrapper">
         <!-- Start Header Style -->
-        <div id="header" class="htc-header">
-            <!-- Start Header Top -->
-            <div class="htc__header__top bg__cat--1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                            <ul class="heaher__top__left">
-                                <!-- <li><i class="fa fa-clock-o"></i>7.30 AM  -  9.30 PM</li> -->
-                                <li><a href="#"><i class="fa fa-phone"></i>050-7297545</a></li>
-                                <li><a href="#"><i class="fa fa-envelope-open"></i>bm@marvelae.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                            <div class="header__top__right">
-                                <ul class="login-register">
-                                    <!-- <li><a href="login-register.html">LOGIN</a></li>
-                                    <li class="separator">/</li>
-                                    <li><a href="login-register.html">REGISTER</a></li> -->
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                                <!-- <div class="heaher__top__btn">
-                                    <a href="#">Buy Now</a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Header Top -->
-            <!-- Start Mainmenu Area -->
-            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-6 col-xs-7">
-                            <div class="logo">
-                                <a href="../index.html">
-                                    <img src="../images/logo/logo.jpeg" alt="logo image">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-sm-6 col-xs-5">
-                            <nav class="main__menu__nav  hidden-xs hidden-sm">
-                                <ul class="main__menu">
-                                    <li class="drop"><a href="../index.html">HOME</a>
-                                        <!-- <ul class="dropdown">
-                                            <li><a href="index.html">Home 01</a></li>
-                                            <li><a href="index-2.html">Home 02</a></li>
-                                            <li><a href="index-3.html">Home 03</a></li>
-                                        </ul> -->
-                                    </li>
-                                    <li><a href="../about.html">ABOUT US</a></li>
-                                    <!-- <li><a href="service.html">SERVICES</a></li> -->
-                                    <!-- <li class="drop"><a href="#">pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="service.html">service</a></li>
-                                            <li><a href="single-service.html">Single service</a></li>
-                                            <li><a href="projects-one.html">projects one</a></li>
-                                            <li><a href="projects-two.html">projects two</a></li>
-                                            <li><a href="projects-three.html">projects three</a></li>
-                                            <li><a href="single-project.html">Single Project</a></li>
-                                            <li><a href="blog.html">BLog</a></li>
-                                            <li><a href="blog-one-column.html">blog one column</a></li>
-                                            <li><a href="blog-two-column.html">blog two column</a></li>
-                                            <li><a href="blog-details.html">blog Details</a></li>
-                                            <li><a href="login-register.html">Log in & Register</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <li class="drop"><a href="#">PRODUCTS</a>
-                                        <ul class="dropdown">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <li><a href="expantion-joint.html">EXPANSION JOINTS</a></li>
-                                                    <li><a href="spacer.html">Spacers</a></li>
-                                                    <li><a href="filler_boards.html">Filler Boards</a></li>
-                                                    <li><a href="">Fibre glass mesh</a></li>
-                                                    <li><a href="tile_trim.html">Tile trim</a></li>
-                                                    <li><a href="construction_chemicals.html">Construction chemicals and Others</a></li>
-                                                    <li><a href="power_tools.html">Power tools and accessories</a></li>
-                                                    <li><a href="water_proofing.html">Water-proofing </a></li>
-
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <li><a href="water_stop.html">Water stop</a></li>
-                                                    <li><a href="dowel_bar.html">Dowel Bar</a></li>
-                                                    <li><a href="ladder_scaffold.html">Ladder/ Scaffold</a></li>
-                                                    <li><a href="bollards.html">Bollards and Rubber Items</a></li>
-                                                    <li><a href="geo_textile.html">Geo Textile</a></li>
-                                                    <li><a href="copper_fitting.html">Copper Fittings for Gas Industries</a></li>
-                                                    <li><a href="plaster.html">Plaster Accessories</a></li>
-                                                    <li><a href="drainage.html">Multi Drain</a></li>
-                                                </div>
-                                            </div>
-                                        
-                                        </ul>
-                                    </li>
-                                    <!-- <li class="drop"><a href="blog.html">BLOG</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog.html">BLog</a></li>
-                                            <li><a href="blog-one-column.html">blog one column</a></li>
-                                            <li><a href="blog-two-column.html">blog two column</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <li><a href="../policy.html">POLICY & SPECIALTY</a></li>
-                                    <li><a href="../contact.html">CONTACT US</a></li>
-                                </ul>
-                            </nav>
-                            <div class="mobile-menu clearfix visible-xs visible-sm">
-                                <nav id="mobile_dropdown">
-                                    <ul>
-                                        <li><a href="../index.html">Home</a>
-                                            <!-- <ul>
-                                                <li><a href="index.html">Home 01</a></li>
-                                                <li><a href="index-2.html">Home 02</a></li>
-                                                <li><a href="index-3.html">Home 03</a></li> 
-                                            </ul> -->
-                                        </li>
-                                        <li><a href="about.html">ABOUT US</a></li>
-                                        <li><a href="#">PRODUCTS</a>
-                                            <ul class="dropdown">
-                                                        <li><a href="expantion-joint.html">EXPANSION JOINTS</a></li>
-                                                        <li><a href="spacer.html">Spacers</a></li>
-                                                        <li><a href="filler_boards.html">Filler Boards</a></li>
-                                                        <li><a href="">Fibre glass mesh</a></li>
-                                                        <li><a href="tile_trim.html">Tile trim</a></li>
-                                                        <li><a href="construction_chemicals.html">Construction chemicals and Others</a></li>
-                                                        <li><a href="power_tools.html">Power tools and accessories</a></li>
-                                                        <li><a href="water_proofing.html">Water-proofing </a></li>
-    
-                                                        <li><a href="water_stop.html">Water stop</a></li>
-                                                        <li><a href="dowel_bar.html">Dowel Bar</a></li>
-                                                        <li><a href="ladder_scaffold.html">Ladder/ Scaffold</a></li>
-                                                        <li><a href="bollards.html">Bollards and Rubber Items</a></li>
-                                                        <li><a href="geo_textile.html">Geo Textile</a></li>
-                                                        <li><a href="copper_fitting.html">Copper Fittings for Gas Industries</a></li>
-                                                        <li><a href="plaster.html">Plaster Accessories</a></li>
-                                                        <li><a href="drainage.html">Multi Drain</a></li>
-                                                   
-                                            
-                                            </ul>
-                                        </li>
-                                        <!-- <li><a href="#">pages</a>
-                                            <ul>
-                                                <li><a href="service.html">service</a></li>
-                                                <li><a href="single-service.html">Single service</a></li>
-                                                <li><a href="projects-one.html">projects one</a></li>
-                                                <li><a href="projects-two.html">projects two</a></li>
-                                                <li><a href="projects-three.html">projects three</a></li>
-                                                <li><a href="single-project.html">Single Project</a></li>
-                                                <li><a href="blog.html">BLog</a></li>
-                                                <li><a href="blog-one-column.html">blog one column</a></li>
-                                                <li><a href="blog-two-column.html">blog two column</a></li>
-                                                <li><a href="blog-details.html">blog Details</a></li>
-                                                <li><a href="login-register.html">Log in & Register</a></li>
-                                            </ul>
-                                        </li>  -->
-                                        <!-- <li><a href="blog.html">blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">BLog</a></li>
-                                                <li><a href="blog-one-column.html">blog one column</a></li>
-                                                <li><a href="blog-two-column.html">blog two column</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <li><a href="../policy.html">POLICY & SPECIALTY</a></li>
-                                        <li><a href="../contact.html">CONTACT US</a></li>
-                                    </ul>
-                                </nav>
-                            </div> 
-                        </div>
-                        <div class="col-md-2 col-sm-6 hidden-xs">
-                            <!-- <div class="htc__header__search">
-                                <input type="text" placeholder="SEARCH">
-                                <a href="#"><i class="fa fa-search"></i></a>
-                            </div> -->
-                            <!-- <div class="heaher__top__btn">
-                                    <a href="#">Buy Now</a>
-                                </div> -->
-                        </div>
-                    </div>
-                    <div class="mobile-menu-area"></div>
-                </div>
-            </div>
-            <!-- End Mainmenu Area -->
-        </div>
-        <div class="ht__bradcaump__area" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url(images/bg/5.jpg) no-repeat scroll center center / cover ;">
+        <div id="header1" ></div>       <div class="ht__bradcaump__area" data--black__overlay="6"
+            style="background: rgba(0, 0, 0, 0) url(images/bg/5.jpg) no-repeat scroll center center / cover ;">
             <div class="ht__bradcaump__wrap">
                 <div class="container">
                     <div class="row">
@@ -237,9 +59,9 @@
                             <div class="bradcaump__inner text-center">
                                 <h2 class="bradcaump-title">Our Products</h2>
                                 <nav class="bradcaump-inner">
-                                  <a class="breadcrumb-item" href="../index.html">Home</a>
-                                  <span class="brd-separetor">-</span>
-                                  <span class="breadcrumb-item active">Products</span>
+                                    <a class="breadcrumb-item" href="../index.html">Home</a>
+                                    <span class="brd-separetor">-</span>
+                                    <span class="breadcrumb-item active">Products</span>
                                 </nav>
                             </div>
                         </div>
@@ -255,7 +77,7 @@
                     <div class="col-xs-12">
                         <div class="section__title text-center">
                             <h2 class="title__line">Power <span class="text--theme">tools and accessories</span></h2>
-                           </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -272,13 +94,12 @@
                             <div class="project foo">
                                 <div class="project__thumb">
                                     <a href="#">
-                                        <img class="product_css" src="../images/Porducts page/Pictures/6. Power tools & accessories/cordless nailer.webp" alt="" srcset="">
+                                        <img class="product_css"
+                                            src="../images/Porducts page/Pictures/6. Power tools & accessories/cordless nailer.webp"
+                                            alt="" srcset="">
                                     </a>
-                                    <div class="project__hover__info">
-                                        <div class="project__action">
-                                            <h2><a href="#">Cordless Nailer</a></h2>
-                                            
-                                        </div>
+                                    <div class="pro__details">
+                                        <h2><a>Cordless Nailer</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -289,13 +110,11 @@
                             <div class="project foo">
                                 <div class="project__thumb">
                                     <a href="#">
-                                        <img src="../images/Porducts page/Pictures/6. Power tools & accessories/Nailer gun pins.jpg" alt="project images">
+                                        <img src="../images/Porducts page/Pictures/6. Power tools & accessories/Nailer gun pins.jpg"
+                                            alt="project images">
                                     </a>
-                                    <div class="project__hover__info">
-                                        <div class="project__action">
-                                            <h2><a href="#">Nailer/ Gun Pins</a></h2>
-                                           
-                                        </div>
+                                    <div class="pro__details">
+                                        <h2><a>Nailer/ Gun Pins</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -306,13 +125,11 @@
                             <div class="project foo">
                                 <div class="project__thumb">
                                     <a href="#">
-                                        <img src="../images/Porducts page/Pictures/6. Power tools & accessories/safety shoes.png" alt="project images">
+                                        <img src="../images/Porducts page/Pictures/6. Power tools & accessories/safety shoes.png"
+                                            alt="project images">
                                     </a>
-                                    <div class="project__hover__info">
-                                        <div class="project__action">
-                                            <h2><a href="#">Safety Shoe</a></h2>
-                                           
-                                        </div>
+                                    <div class="pro__details">
+                                        <h2><a>Safety Shoe</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -323,30 +140,26 @@
                             <div class="project foo">
                                 <div class="project__thumb">
                                     <a href="#">
-                                        <img src="../images/Porducts page/Pictures/6. Power tools & accessories/safety belt tuf fix.png" alt="project images">
+                                        <img src="../images/Porducts page/Pictures/6. Power tools & accessories/safety belt tuf fix.png"
+                                            alt="project images">
                                     </a>
-                                    <div class="project__hover__info">
-                                        <div class="project__action">
-                                            <h2><a href="#">Safety Belt</a></h2>
-                                            
-                                        </div>
+                                    <div class="pro__details">
+                                        <h2><a>Safety Belt</a></h2>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- End Single Project -->
-                                                <!-- Start Single Project -->
+                        <!-- Start Single Project -->
                         <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
                             <div class="project foo">
                                 <div class="project__thumb">
                                     <a href="#">
-                                        <img src="../images/Porducts page/Pictures/6. Power tools & accessories/injection gun.jpg" alt="project images">
+                                        <img src="../images/Porducts page/Pictures/6. Power tools & accessories/injection gun.jpg"
+                                            alt="project images">
                                     </a>
-                                    <div class="project__hover__info">
-                                        <div class="project__action">
-                                            <h2><a href="#">Injection Gun</a></h2>
-                                            
-                                        </div>
+                                    <div class="pro__details">
+                                        <h2><a>Injection Gun</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -364,332 +177,9 @@
             </div>
         </section>
 
-                        <!-- Start About Area -->
-                        <section class="htc__about__area about--2 text__pos ptb--70 bg__white">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="section__title text-center">
-                                            <h2 class="title__line">OUR <span class="text--theme">COMPANIES</span></h2>
-                                           </div>
-                                    </div>
-                                </div>
-                                <div class="row  mt--70" >
-                                    <div  class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                                        <div  class="about foo">
-                                            <div class="about__inner">
-                                                <h2 class="text-center"><a href="https://www.marvelae.com/">Marvel Intl. Tech. Cont. LLC.</a></h2>
-                                                <br>
-                                                <P class="text-center" >
-                                                    Exclusive UAE & Oman Distributors of <br>
-                                                Dixon Europe Hygienic products
-                                                </P>
-                                           
-                                                <P class="text-center" >
-                                                    Leading supplier & contractor of customized  
-                                                    Industrial processing solutions and services
-                                                </P>
-                                              <br>
-                                                <P class="text-center" >
-                                                    Tel: +9716 5429338 &nbsp;  Mob: 050 7297545  
-                                                Email:sales@marvelae.com  &nbsp; www.marvelae.com
-                                                </P>
-                                                
-                                            </div>
-                                            <div class="about__inner about__hober__info">
-                                                <h2 class="text-center"><a href="https://www.marvelae.com/">Marvel International Technical Contracting L.L.C</a></h2>
-                                                <br>
-                                                <P class="text-center" >
-                                                    Exclusive UAE & Oman Distributors of <br>
-                                                Dixon Europe Hygienic products
-                                                </P>
-                                           
-                                                <P class="text-center" >
-                                                    Leading supplier & contractor of customized
-                                                    Industrial processing solutions and services
-                                                </P>
-                                              <br>
-                                                <P class="text-center" >
-                                                    Tel: +9716 5429338 &nbsp;  Mob: 050 7297545  
-                                                Email:sales@marvelae.com &nbsp;  www.marvelae.com
-                                                </P>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                                        <div class="about foo">
-                                            <div class="about__inner">
-                                                <h2 class="text-center"><a href="https://www.firstclassuae.com/">First class Elec. Sw. Gr. Co. LLC.</a></h2>
-                                                <br>
-                                                <P class="text-center" >
-                                                    Control Panels, Electrical Distribution Panels
-                                                    Industrial Automation & Control Engg.  
-                                                    Supply, Installation & Programming of: 
-                                                    VFD, Soft Starter, PLC, SCADA & HMI 
-                                                    Power, Control, Instrument & Data Cabling 
-                                                </P>
-                                                <br>
-                                              
-                                                <P class="text-center" >
-                                                    Tel: +9716 5429269     &nbsp;     Mob: 050-6580150
-                                                    Email:fcpanel@eim.ae &nbsp;   www.firstclassuae.com
-                                                </P>
-                                                
-                                            </div>
-                                            <div class="about__inner about__hober__info">
-                                                <h2 class="text-center"><a href="https://www.firstclassuae.com/">First class Elec. Sw. Gr. Co. LLC.</a></h2>
-                                                <br>
-                                                <P class="text-center" >
-                                                    Control Panels, Electrical Distribution Panels
-                                                    Industrial Automation & Control Engg.  
-                                                    Supply, Installation & Programming of: 
-                                                    VFD, Soft Starter, PLC, SCADA & HMI 
-                                                    Power, Control, Instrument & Data Cabling 
-                                                </P>
-                                           
-                                              <br>
-                                                <P class="text-center" >
-                                                    Tel: +9716 5429269     &nbsp;      Mob: 050-6580150
-                                                    Email:fcpanel@eim.ae &nbsp;   www.firstclassuae.com
-                                                </P>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                                        <div class="about foo">
-                                            <div class="about__inner">
-                                                <h2 class="text-center"><a href="https://www.marvelbmuae.com/">Marvel Intl. Bldg. Mat. Tr.  LLC.</a></h2>
-                                                <br>
-                                                <P class="text-center" >
-                                                    Import, Export & Trading of <br>
-                                                    Materials for Foam Work and 
-                                                    Finishing Materials for <br>
-                                                    Construction Industry
-                                                </P>
-                                                
-                                                <br><br><br>
-                                              
-                                                <P class="text-center" >
-                                                    Tel: +9716 5429338  &nbsp;   Mob:050-7297545 <br>
-                                                    Email: bm@marvelae.com  &nbsp;  www.marvelbmuae.com
-                                                </P>
-                                                
-                                            </div>
-                                            
-                                            <div class="about__inner about__hober__info">
-                                                <h2 class="text-center"><a href="https://www.marvelbmuae.com/">Marvel Intl. Bldg. Mat. Tr.  LLC.</a></h2>
-                                                <br>
-                                                <P class="text-center" >
-                                                    Import, Export & Trading of <br>
-                                                    Materials for Foam Work and 
-                                                    Finishing Materials for <br>
-                                                    Construction Industry
-                                                </P>
-                                                <br><br><br>
-                                              
-                                                <P class="text-center" >
-                                                    Tel: +9716 5429338    &nbsp;    Mob:050-7297545 
-                                                    Email: bm@marvelae.com &nbsp;  www.marvelbmuae.com
-                                                </P>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="text-center">
-                                        Please call us today or email us your requirements and we welcome the opportunity to respond immediately with a cost effective solution.
-                                    </p>
-                                </div>
-                            </div>
-                
-                        </section>
-                        <!-- End About Area -->
-
-                        <div class="htc__contact__address add-res bg__cat--1">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="htc__contact__wrap clearfix">
-                                            <!-- Start Single Address -->
-                                            <div class="ht__address__inner">
-                                                <div class="ht__address__icon map-pin">
-                                                    <i class="zmdi zmdi-pin"></i>
-                                                </div>
-                                                <div class="ht__address__details">
-                                                    <p>MARVEL INTERNATIONAL <br>
-                                                        INTERNATIONAL BUILDING  <br>
-                                                        MATERIALS TRADING LLC</p>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Address -->
-                                            <!-- Start Single Address -->
-                                            <div class="ht__address__inner">
-                                                <div class="ht__address__icon glob">
-                                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="ht__address__details">
-                                                    <p><a href="#">0507297545</a></p>
-                                                   
-                                                </div>
-                                            </div>
-                                            <!-- End Single Address -->
-                                            <!-- Start Single Address -->
-                                            <div class="ht__address__inner">
-                                                <div class="ht__address__icon">
-                                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="ht__address__details">
-                                                    <p><a href="#">0507297545 </a></p>
-                                                    <p><a href="#">0506580150</a></p>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Address -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Contact Address -->
-                        <footer class="htc__footer__area">
-                            <div class="footer__top ptb--130" data--1f2d30__overlay="9.5" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat fixed center center / cover ;">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="htc__footer__wrap clearfix">
-                                            <!-- Start Single Footer -->
-                                            <!-- <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                                                <div class="footer">
-                                                    <div class="footer__widget">
-                                                        <h2 class="ft__title">ABOUT</h2>
-                                                    </div>
-                                                    <div class="ft__details">
-                                                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled demoralized On the other hand, we denounce </p>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-                                            <!-- End Single Footer -->
-                                            <!-- Start Single Footer -->
-                                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 xmt-40">
-                                                <div class="footer quick__link">
-                                                    <div class="footer__widget">
-                                                        <!-- <h2 class="ft__title">QUICK LINKS</h2> -->
-                                                    </div>
-                                                    <div class="footer__link">
-                                                        <ul class="ft__menu">
-                                                            <li><a href="dowel-bar-sleeve.html">Dowel Bar Sleeve</a></li>
-                                                            <li><a href="expantion-joint.html">Expansion Joints</a></li>
-                                                            <li><a href="fiberglass-mesh.html">Fiberglass Mesh</a></li>
-                                                            
-                                                        </ul>
-                                                        <!-- <ul class="ft__menu">
-                                                            <li><a href="#">Quote</a></li>
-                                                            <li><a href="projects-one.html">Projects</a></li>
-                                                            <li><a href="contact.html">Contact</a></li>
-                                                            <li><a href="#">Features</a></li>
-                                                        </ul> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Footer -->
-                                            <!-- Start Single Footer -->
-                                            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 xmt-40">
-                                                <div class="footer quick__link">
-                                                    <div class="footer__widget">
-                                                        <!-- <h2 class="ft__title">QUICK LINKS</h2> -->
-                                                    </div>
-                                                    <div class="footer__link">
-                                                        <ul class="ft__menu">
-                                                            <li><a href="product-geo-textile.html">Geo Textile</a></li>
-                                                            <li><a href="product-ladder.html">Ladder</a></li>
-                                                            <li><a href="pvc-corner-beads.html">PVC Corner Beads</a></li>
-                                                            
-                                                        </ul>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Footer -->
-                                            
-                                            <!-- Start Single Footer -->
-                                            <!-- <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 smt-40 xmt-40">
-                                                <div class="footer">
-                                                    <div class="footer__widget">
-                                                        <h2 class="ft__title">INSTAGRAM</h2>
-                                                    </div>
-                                                    <ul class="footer__instagram">
-                                                        <li><a href="#"><img src="images/blog/sm-img/1.jpg" alt="images"></a></li>
-                                                        <li><a href="#"><img src="images/blog/sm-img/2.jpg" alt="images"></a></li>
-                                                        <li><a href="#"><img src="images/blog/sm-img/3.jpg" alt="images"></a></li>
-                                                        <li><a href="#"><img src="images/blog/sm-img/4.jpg" alt="images"></a></li>
-                                                        <li><a href="#"><img src="images/blog/sm-img/5.jpg" alt="images"></a></li>
-                                                        <li><a href="#"><img src="images/blog/sm-img/6.jpg" alt="images"></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div> -->
-                                            <!-- End Single Footer -->
-                                            <!-- Start Single Footer -->
-                                            <div class="col-md-3 col-lg-2 col-lg-offset-1 col-sm-6 col-xs-12 smt-40 xmt-40">
-                                                <div class="footer">
-                                                    <div class="footer__widget">
-                                                        <!-- <h2 class="ft__title">INQUARY</h2> -->
-                                                        <div class="footer__link">
-                                                            <ul class="ft__menu">
-                                                                <li><a href="about.html">About Us</a></li>
-                                                                <li><a href="contact.html">Contact Us</a></li>
-                                                                <!-- <li><a href="#">Plambing</a></li>
-                                                                <li><a href="#">Plambing</a></li> -->
-                                                            </ul>
-                                                            <!-- <ul class="ft__menu">
-                                                                <li><a href="#">Painting</a></li>
-                                                                <li><a href="#">Roofing</a></li>
-                                                                <li><a href="#">Plambing</a></li>
-                                                                <li><a href="#">Features</a></li>
-                                                            </ul> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Footer -->
-                                            <!-- Start Single Footer -->
-                                            <div class="col-md-3 col-lg-2 col-lg-offset-1 col-sm-6 col-xs-12 smt-40 xmt-40">
-                                                <div class="footer">
-                                                    <div class="footer__widget">
-                                                        <h2 class="ft__title">CONTACT DETAILS</h2>
-                                                        <div class="footer__link">
-                                                            <ul class="">
-                                                                <li><a>MARVEL INTERNATIONAL</a></li>
-                                                                <li><a>INTERNATIONAL BUILDING </a></li>
-                                                                <li><a>MATERIALS TRADING LLC</a></li>
-                                                                <!-- <li><a>Landline:+971 42211517</a></li> -->
-                                                                <li><a>Mobile: 0507297545, 0506580150</a></li>
-                                                                <li><a>WhatsApp: 0507297545</a></li>
-                                                            </ul>
-                                                            <!-- <ul class="ft__menu">
-                                                                <li><a href="#">Painting</a></li>
-                                                                <li><a href="#">Roofing</a></li>
-                                                                <li><a href="#">Plambing</a></li>
-                                                                <li><a href="#">Features</a></li>
-                                                            </ul> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Footer -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="copyright bg__theme">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <div class="copyright__inner">
-                                                <p>Copyright <a href="https://tinos.co.in/" target="_blank">Tinos</a>
-                                                All Rights Reserved 2022</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </footer>
-                        <!-- End Footer Area -->
+        <!-- Start About Area -->
+        <div id="footer"></div> 
+        <!-- End Footer Area -->
     </div>
     <!-- Body main wrapper end -->
 
